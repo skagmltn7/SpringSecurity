@@ -30,7 +30,7 @@
 
 ### 02. 인증 API - 사용자 정의 보안 기능 구현
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20FormLog%203976692db0df4df1a24fdc2b8382b03c/Untitled.png)
+<img width="712" alt="Untitled" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/219b7c3e-d177-4972-8395-34c78988f973">
 
 **스프링 시큐리티의 보안설정들을 커스텀하는 방법**
 
@@ -73,7 +73,7 @@ spring.security.user.password=???
 
 ### 03. 인증 API - Form 인증
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20FormLog%203976692db0df4df1a24fdc2b8382b03c/Untitled%201.png)
+<img width="511" alt="Untitled (1)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/a10bc989-bf78-418a-b23b-2bc722c36f3b">
 
 **Form 인증 방식 단계**
 
@@ -144,7 +144,7 @@ public class SecurityController {
 
 ### 04. 인증 API - UsernamePasswordAuthenticationFilter
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20FormLog%203976692db0df4df1a24fdc2b8382b03c/Untitled%202.png)
+<img width="648" alt="Untitled (2)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/0f3f1181-e461-46d3-9fb9-dadc739400d0">
 
 **시큐리티 Filter 인증(** UsernamePasswordAuthenticationFilter **) 단계**
 
@@ -309,7 +309,7 @@ result.setDetails(authentication.getDetails());
 
 ### 05. 인증 API - Logout, LogoutFilter
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20FormLog%203976692db0df4df1a24fdc2b8382b03c/Untitled%203.png)
+<img width="526" alt="Untitled (3)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/5f481a6c-4df5-4e12-b614-d5e150fad613">
 
 **Logout 단계**
 
@@ -357,4 +357,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 **LogoutFilter**
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20FormLog%203976692db0df4df1a24fdc2b8382b03c/Untitled%204.png)
+<img width="634" alt="Untitled (4)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/97213949-d13a-4c56-9643-c0995ba4ef38">
