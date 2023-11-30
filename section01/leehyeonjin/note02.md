@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ### 08. 인증 API - RememberMeAuthenticationFilter
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%8B%E1%85%B5%2058fe7815324c40908c34981123dc9ddd/Untitled.png)
+<img width="727" alt="Untitled (5)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/a87675f9-29c1-435e-8399-1cf3753c5f8d">
 
 `RememberMeAuthenticationFilter`**가 요청을 받아 처리하기 위한 조건**
 
@@ -59,7 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 ### 09. 인증 API - AnonymousAuthenticationFilter
 
-![Untitled](spring%20security%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%20api%20%E1%84%86%E1%85%B5%E1%86%BE%20filter%20%E1%84%8B%E1%85%B5%E1%84%92%E1%85%A2(%20%E1%84%8E%E1%85%AE%E1%84%80%E1%85%A1%20%E1%84%8B%E1%85%B5%2058fe7815324c40908c34981123dc9ddd/Untitled%201.png)
+<img width="664" alt="Untitled (6)" src="https://github.com/PragmaticArchive/SpringSecurity/assets/90823532/06d4b00a-aa5f-42bc-9d90-ae75415ce672">
 
 `AnonymousAuthenticationFilter`**의 존재이유**
 
