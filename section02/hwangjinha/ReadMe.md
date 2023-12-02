@@ -8,7 +8,7 @@
 `DelegetingFilterProxy -(요청 위임)-> SpringBean -> ServletFilter`
 
 ### 2.Filter Chain Proxy
-![[Pasted image 20231202124902.png]]
+![](./image20231202124902.png)
 
 1. springSecurityFilterChain 의 이름으로 생성되는 필터 빈
 2. DelegatingFilterProxy 으로 부터 요청을 위임 받고 실제 보안 처리
@@ -20,7 +20,7 @@
 	- 필터의 순서를 잘 정의
 6. 마지막 필터까지 인증 및 인가 예외가 발생하지 않으면 보안 통과
 
-![[Pasted image 20231202145309.png]]
+![](./image20231202145309.png)
 
 > 유저의 리퀘스트가 `Servlet Container`로 먼저 들어온다.
 > 각각의 필터가 처리되면서, `DelegatingFilterProxy`로 요청이 간다.
@@ -194,7 +194,7 @@ public class SecurityController {
 - 최종 응답 시 공통
 	- SecurityContextHolder.clearContext()
 
-![[Pasted image 20231202180733.png]]
+![](./image20231202180733.png)
 - 사용자의 매 요청마다 필터에 들어간다. (인증여부 상관 x)
 - 인증 전
 	- 새로운 컨텍스트 생성하여 SecurityContextHolder에 저장
@@ -209,10 +209,10 @@ public class SecurityController {
 		- 별도의 AuthFilter 등을 거쳐 인증을 새로 진행할 필요가 없다.
 
 ## 6) 인증 흐름 이해 - Authentication Flow
-![[Pasted image 20231202182740.png]]
+![](./image20231202182740.png)
 
 ## 7) 인증 관리자 - AuthenticationManager
-![[Pasted image 20231202190144.png]]
+![](./image20231202190144.png)
 - AuthenticationManager : AuthenticationProvider 목록 중에서 인증 처리 요건에 맞는 AuthenticationProvider 를 찾아 인증 처리를 위임한다.
 	- Form이면 DaoA.P를, RememberMe이면 RememberMeA.P를 찾아 위임하는 방식
 - 부모 ProviderManager를 설정하여 AuthenticationProvider를 계속 탐색할 수  있다.
@@ -285,4 +285,4 @@ public void configure(HttpSecurity http) throws Exception {
 		- 결정을 내릴 수 없는 경우
 
 ## 11) 스프링 시큐리티 필터 및 아키텍처 정리
-![[Pasted image 20231202211848.png]]
+![](./image20231202211848.png)
