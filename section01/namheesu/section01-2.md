@@ -12,7 +12,7 @@
   - `isAnonymouse()`와 `isAuthenticated()`로 구분(return boolean)
   - 세션에 저장X
 
-![img](./img/AnonymousAuthenticationFilter.png)
+![img](img/AnonymousAuthenticationFilter.png)
 
 - **인증 객체가 없는** 클라이언트가 특정 자원 접근 시도
 - `AnonymousAuthenticationFilter`로 인증 객체 검사
