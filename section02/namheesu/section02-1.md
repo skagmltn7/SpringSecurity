@@ -1,7 +1,5 @@
 ## DelegatingFilterProxy, FilterChainProxy ~ SecurityContextHolder, SecurityContext 정리
 
-<hr/>
-
 # DelegatingFilterProxy, FilterChainProxy
 
 ### 필터의 흐름
