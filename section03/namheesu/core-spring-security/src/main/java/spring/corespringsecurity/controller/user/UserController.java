@@ -1,5 +1,6 @@
 package spring.corespringsecurity.controller.user;
 
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -11,13 +12,11 @@ import spring.corespringsecurity.domain.AccountDto;
 import spring.corespringsecurity.domain.service.UserService;
 
 @Controller
+@RequiredArgsConstructor
 public class UserController {
 
-	@Autowired
-	private PasswordEncoder passwordEncoder;
-
-	@Autowired
-	private UserService userService;
+	private final PasswordEncoder passwordEncoder;
+	private final UserService userService;
 
 	@GetMapping("/users")
 	public String createUser() throws Exception {
