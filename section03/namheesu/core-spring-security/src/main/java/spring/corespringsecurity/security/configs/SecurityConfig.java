@@ -21,7 +21,6 @@ import spring.corespringsecurity.security.provider.CustomAuthenticationProvider;
 @EnableWebSecurity
 @Slf4j
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-
     @Bean
     PasswordEncoder passwordEncoder() {
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();

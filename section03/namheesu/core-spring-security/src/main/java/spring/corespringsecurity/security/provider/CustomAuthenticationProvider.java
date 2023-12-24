@@ -9,6 +9,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import spring.corespringsecurity.security.service.AccountContext;
 
 public class CustomAuthenticationProvider implements AuthenticationProvider {
@@ -18,7 +19,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String username = authentication.getName();
@@ -26,7 +26,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
         AccountContext accountContext = (AccountContext) userDetailsService.loadUserByUsername(username);
 
-        if (!passwordEncoder.matches(accountContext.getAccount().getPassword(), password)) {
+        if (!passwordEncoder.matches(password, accountContext.getAccount().getPassword())) {
             throw new BadCredentialsException("BadCredentialsException");
         }
 
